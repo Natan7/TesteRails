@@ -1,0 +1,24 @@
+<h3> Resultado da Pesquias </h3>
+
+<table>
+	<thead>
+	  <tr>
+	    <th>Nome</th>
+	    <th>Categoria</th>
+	    <th colspan="3"></th>
+	  </tr>
+	</thead>
+
+	<tbody>
+		<% @produtos.each do |produto| #for enquanto tiver produtos %>
+			<tr>
+				<td>Nome: <%=produto.nome%></td>
+				<td>Categoria: <%=produto.categoria%></td>
+			</tr>
+		<%end%>
+	</tbody>
+</table>
+
+<%= link_to 'Back', produtos_path %>
+
+
